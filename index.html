@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twitter Clone</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+          <a href="#" class="logo">Twitter Clone</a>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Explore</a></li>
+            <li><a href="#">Notifications</a></li>
+            <li><a href="#">Messages</a></li>
+            <li><a href="#">Profile</a></li>
+          </ul>
+          <form>
+            <input type="text" placeholder="Search">
+            <button>Search</button>
+          </form>
+        </nav>
+      </header>
+      <main>
+        <div class="container">
+          <div class="tweet-compose">
+            <form>
+              <textarea placeholder="What's happening?"></textarea>
+              <div class="tweet-options">
+                <div class="left">
+                  <label for="image-upload">
+                    <i class="fa fa-camera"></i>
+                  </label>
+                  <input id="image-upload" type="file" style="display: none;">
+                </div>
+                <div class="right">
+                  <button type="submit">Tweet</button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="tweet-feed">
+            <div class="tweet">
+              <div class="tweet-header">
+                <img src="https://picsum.photos/50/50" alt="Profile picture">
+                <h3>Username</h3>
+                <span>@username</span>
+                <span>· 10m</span>
+              </div>
+              <div class="tweet-content">
+                <p>This is a sample tweet.</p>
+                <img src="https://picsum.photos/200/200" alt="Tweet image">
+              </div>
+              <div class="tweet-footer">
+                <i class="fa fa-comment"></i>
+                <i class="fa fa-retweet"></i>
+                <i class="fa fa-heart"></i>
+                <i class="fa fa-ellipsis-h"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <script src="app.js"></script>
+      </main>
+      <footer>
+        <p>&copy; Copyright 2023 Twitter Clone</p>
+        <p>&copy; Clone created by brandonOgola</p>
+      </footer>
+</body>
+</html>
+
+
